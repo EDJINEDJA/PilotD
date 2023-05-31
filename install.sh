@@ -1,4 +1,4 @@
-#!bin/bash
+#!/usr/bin/env bash
 set -o errexit
 echo "update the terminal"
 sudo apt-get update
