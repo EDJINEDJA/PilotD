@@ -1,0 +1,10 @@
+Db:
+  DbName : "icdv1"
+
+RawData:
+  Path: ./data/raw/CIM10_final_update_plus.csv
+  Columns4Drop : ['INDEX']
+
+ProcessedData: 
+  ProcessedFile: "./data/processed/aelsdlslsdkslkdl13dsldm.json"
+

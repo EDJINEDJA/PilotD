@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pymongo = "==4.3.3"
+fastapi = "==0.95.2"
+uvicorn = "==0.22.0"
+python-dotenv = "*"
+pyyaml = "==6.0"
+pydantic = "*"
+pandas = "*"
+transformers = "*"
+torch = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
