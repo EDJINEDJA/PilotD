@@ -46,9 +46,6 @@ async def Icd9ToIcd10(Icd9 : str):
     except:
         return {"Not" : "Found"}
     
-
-
-
 @user.get('/icd/icd10toicd9/{Icd10}/')
 async def Icd10ToIcd9(Icd10 : str):
     collection=Client["icdv1"]["icdv1"]

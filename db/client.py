@@ -7,4 +7,4 @@ import os
 # Load environment variables from .env
 load_dotenv("./dotenv/")
 #Connect to the data base
-Client = MongoClient(os.getenv("ENTRYPOINT"))
+Client = MongoClient(os.getenv("ENTRYPOINT"), connect=False)
