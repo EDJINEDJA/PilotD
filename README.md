@@ -7,7 +7,7 @@
         <img src="https://img.shields.io/badge/license-MIT-yellow.svg" />
     </a>
     <a href="https://github.com/EDJINEDJA/PilotX/commits/main" alt="Commits">
-        <img src="https://img.shields.io/github/last-commit/EDJINEDJA/PilotX/master" />
+        <img src="https://img.shields.io/github/last-commit/EDJINEDJA/PilotX/main" />
     </a>
     <a href="https://github.com/EDJINEDJA/PilotX" alt="Activity">
         <img src="https://img.shields.io/badge/contributions-welcome-orange.svg" />
