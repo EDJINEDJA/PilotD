@@ -92,5 +92,3 @@ async def Icd10(Description : str):
         return Icd10ToIcd9OutMLSchema(result)
     except:
         return {"Not" : "Found"}
-
-
