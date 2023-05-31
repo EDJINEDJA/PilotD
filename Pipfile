@@ -13,6 +13,7 @@ pydantic = "*"
 pandas = "*"
 transformers = "*"
 torch = "*"
+gunicorn = "*"
 
 [dev-packages]
 
