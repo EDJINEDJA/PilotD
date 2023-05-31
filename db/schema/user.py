@@ -1,4 +1,5 @@
-def UserOutAllSchema(item)-> dict:
+from typing import List , Dict
+def UserOutAllSchema(item)-> Dict:
     return { "id":  str(item["_id"]),
         "Icd10" :  item["CODE-10"],
         "Icd9" :  item["CODE-9"],
@@ -14,11 +15,11 @@ def UserOutAllSchema(item)-> dict:
         "Ssr" :  item["SSR"],
         "Psy":  item["PSY"]}
 
-def UsersOutAllSchema(items)-> list[dict]:
+def UsersOutAllSchema(items)-> List[Dict]:
 
     return [UserOutAllSchema(item) for item in items]
 
-def Icd9ToIcd10Schema(item)->dict:
+def Icd9ToIcd10Schema(item)->Dict:
     return {"Icd9" :  item["CODE-9"],
         "Icd10" :  item["CODE-10"],
         "Icd10Grouped" :  item["CIM10-GROUPED"],
@@ -33,11 +34,11 @@ def Icd9ToIcd10Schema(item)->dict:
         "Ssr" :  item["SSR"],
         "Psy":  item["PSY"]
         }
-def Icd9ToIcd10OutSchema(items)-> list[dict]:
+def Icd9ToIcd10OutSchema(items)-> List[Dict]:
 
     return [Icd9ToIcd10Schema(item) for item in items]
 
-def Icd10ToIcd9Schema(item)->dict:
+def Icd10ToIcd9Schema(item)->Dict:
     return {
         "Icd10" :  item["CODE-10"],
         "Icd9" :  item["CODE-9"],
@@ -53,12 +54,12 @@ def Icd10ToIcd9Schema(item)->dict:
         "Ssr" :  item["SSR"],
         "Psy":  item["PSY"]
         }
-def Icd10ToIcd9OutSchema(items)-> list[dict]:
+def Icd10ToIcd9OutSchema(items)-> List[Dict]:
 
     return [Icd10ToIcd9Schema(item) for item in items]
 
 
-def Icd9ToIcd10MLSchema(item)->dict:
+def Icd9ToIcd10MLSchema(item)->Dict:
     return {
         "Score" : item["SCORE"],
         "Icd10" :  item["CODE-10"],
@@ -75,11 +76,11 @@ def Icd9ToIcd10MLSchema(item)->dict:
         "Ssr" :  item["SSR"],
         "Psy":  item["PSY"]
         }
-def Icd9ToIcd10OutMLSchema(items)-> list[dict]:
+def Icd9ToIcd10OutMLSchema(items)-> List[Dict]:
 
     return [Icd9ToIcd10MLSchema(item) for item in items] 
 
-def Icd10ToIcd9MLSchema(item)->dict:
+def Icd10ToIcd9MLSchema(item)->Dict:
     return {
         "Score" : item["SCORE"],
         "Icd10" :  item["CODE-10"],
@@ -96,6 +97,6 @@ def Icd10ToIcd9MLSchema(item)->dict:
         "Ssr" :  item["SSR"],
         "Psy":  item["PSY"]
         }
-def Icd10ToIcd9OutMLSchema(items)-> list[dict]:
+def Icd10ToIcd9OutMLSchema(items)-> List[Dict]:
 
     return [Icd10ToIcd9MLSchema(item) for item in items]
