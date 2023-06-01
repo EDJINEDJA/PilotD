@@ -1,5 +1,5 @@
 Db:
-  DbName : "icdv1"
+  DbName : "icds"
 
 RawData:
   Path: ./data/raw/CIM10_final_update_plus.csv

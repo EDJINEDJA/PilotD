@@ -4,16 +4,22 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pymongo = "==4.3.3"
-fastapi = "==0.95.2"
-uvicorn = "==0.22.0"
-python-dotenv = "*"
-pyyaml = "==6.0"
-pydantic = "*"
-pandas = "*"
-transformers = "*"
-torch = "*"
+fastapi = "*"
 gunicorn = "*"
+huggingface-hub = "*"
+numpy = "*"
+pandas = "*"
+pydantic = "*"
+pymongo = "*"
+python-dotenv = "*"
+pyyaml = "*"
+regex = "*"
+requests = "*"
+tokenizers = "*"
+torch = "*"
+tqdm = "*"
+transformers = "*"
+uvicorn = "*"
 
 [dev-packages]
 
